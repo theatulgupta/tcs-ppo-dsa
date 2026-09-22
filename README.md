@@ -1,8 +1,10 @@
-# TCS Research PPO — DSA Preparation
+# TCS Research PPO — DSA Preparation 🚀
 
-Java-based offline DSA preparation for TCS Research PPO interview.
+Java-based offline Data Structures and Algorithms (DSA) preparation repository for the TCS Research PPO interview.
 
-## Progress
+---
+
+## 📊 Progress Tracker
 
 - [ ] Arrays
 - [ ] Strings
@@ -19,15 +21,42 @@ Java-based offline DSA preparation for TCS Research PPO interview.
 - [ ] Graphs
 - [ ] Dynamic Programming
 
-## Rule
+---
 
-For every problem:
-1. Understand the problem.
-2. Write the approach from scratch.
-3. Implement complete Java program.
-4. Compile and run locally.
-5. Test edge cases.
-6. Submit to LeetCode.
-7. Mark progress.
+## 🛠️ Workflow Rules
 
-Do not store any TCS confidential/company code or data in this repository.
+For every problem, follow this disciplined routine:
+1. **Understand** the problem and identify edge cases.
+2. **Design** the approach from scratch.
+3. **Implement** the complete Java program locally.
+4. **Compile and run** tests.
+5. **Submit** to LeetCode.
+6. **Mark progress** in this repository.
+
+---
+
+## 📥 How to Take Input from Scratch (`BufferedReader`)
+
+For competitive programming and efficient input handling in Java interviews, use `BufferedReader` combined with `StringTokenizer`. 
+
+```java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
+
+        // 1. Read a full line and tokenize it by whitespace
+        st = new StringTokenizer(br.readLine()); 
+
+        // 2. Extract and parse tokens sequentially using nextToken()
+        int n = Integer.parseInt(st.nextToken());
+        
+        // Example: Reading subsequent tokens or next lines
+        // String name = st.nextToken();
+    }
+}
